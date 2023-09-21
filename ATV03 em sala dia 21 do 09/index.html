@@ -6,20 +6,29 @@
     <title>Maior mudança em 40 anos! Intel Core Meteor Lake detalhada!</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <ul>
-        <li><a href="#Intel Foveros">Intel Foveros</a></li>
-        <li><a href="#Área de Compute">Área de Compute</a></li>
-        <li><a href="#Área de SOC">Área de SOC</a></li>
-        <li><a href="#Área dos graficos">Área dos graficos</a></li>
-      </ul>
+    <nav>
+        <ul>
+            <li><a href="#Intel Foveros">Intel Foveros</a></li>
+            <li><a href="#Área de Compute">Área de Compute</a></li>
+            <li><a href="#Área de SOC">Área de SOC</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">outros</a>
+                <div class="dropdown-content">
+                    <a href="#Área dos graficos">Área dos graficos</a>
+                    <a href="#Área do I/O">Área do I/O</a>
+                    <a href="#O maestro dessa orquestra">O maestro dessa orquestra</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </head>
 <body>
     <article>
-        <H1>Maior mudança em 40 anos! Intel Core Meteor Lake detalhada!</H1>
+        <H2>Maior mudança em 40 anos! Intel Core Meteor Lake detalhada!</H2>
         <p>Enfim a Intel detalhou a fundo as novidades que serão introduzidas com a 14ª geração Intel Core, codinome Meteor Lake, que equipará sua próxima linha de processadores. Essa é uma das maiores modificações na tecnologia de CPUs da empresa, introduzindo um novo processo de fabricação, o Intel 4, e avançando ainda mais profundamente na microarquitetura híbrida introduzida inicialmente na 12ª geração, codinome Alder Lake.</p>
         <p>Vamos descrever em detalhes o que muda na nova geração de produtos, explicando como cada estrutura opera e como a Intel está reinventando a forma de construir seus processadores, agora que enfim vai dar escala ao Intel Foveros.</p> 
         <section id="Intel Foveros">
-            <H1>Intel Foveros</H1>
+            <H2>Intel Foveros</H2>
             <p>O grande pilar da inovação da 14ª geração Intel Core é o Intel Foveros. Essa nova técnica de construção de chips usa como base o Intel embedded multi-die interconnect bridge (EMIB), ou em tradução livre, a Ponte de Interconexão de Múltiplos Dies. Essa tecnologia já foi implementada em outros produtos da Intel, na linha Intel Xeon série Max, e agora vai ganhar escala com sua chegada a produtos para o consumidor final.</p>
             <p>A EMIB segue uma lógica semelhante a tecnologia de chiplets 2,5D presente em produtos como os gráficos Radeon RDNA 2 e 3, que unem um die com gráficos e outro com grande quantidade de memória ou, como a AMD chama, o Infinity Cache. Mas o EMIB tem uma evolução importante.</p>
             <p>A tecnologia 2,5D tem uma grave limitação: ela empilha dies sobre outro silício, então tamanho da implementação é diretamente vinculada ao tamanho desse interpositor. Seu custo também é amplificado na medida que você tenta unir mais dies. O EMIB não tem esse problema, pois na medida que os dies são aglomerados, essa ponte irá ligar diretamente um ao outro, criando uma expansibilidade muito menos custosa, afinal são peças muito mais compactas, e sem limitações de área máxima.</p>
@@ -29,7 +38,7 @@
         </section>  
     
         <section id="Área de Compute">
-            <H1>Área de Compute dos Intel Meteor Lake</H1>
+            <H2>Área de Compute dos Intel Meteor Lake</H2>
             <p>O die onde estão as estruturas mais tradicionais é o die de Compute, ou die de Computação, como iremos traduzir aqui. Aqui estão os “bons e velhos” núcleos principais de processamento, separados em núcleos de performance (P-cores) e núcleos de eficiência (E-cores), da mesma forma como acontece na 12ª e 13ª geração Intel Core. O que muda é que teremos mais núcleos de computação neste chip, mas como não estão nesse die, falaremos deles mais para frente.</p>
             <p>Os novos núcleos de computação dos Meteor Lake vão trazer o novo processo de fabricação, o Intel 4, que usa a nova técnica de litografia do Extreme Ultra Violet (EUV). Essa nova tecnologia alcança mais de 20% ganho em eficiência energética comparada com o processo anterior, o Intel 7, e uma redução de área de aproximadamente 20%.</p>
             <p>Os núcleos de performance dos Meteor Lake, codinome Redwood Cove, vão trazer melhorias de eficiência energética e otimizações na unidade de monitoramento e de atuação com o Intel Thread Director, tecnologia da Intel que direciona processos para diferentes núcleos dependendo de suas características.</p>
@@ -39,7 +48,7 @@
         </section>
 
         <section id="Área de SOC">
-            <H1>Área de SOC</H1>
+            <H2>Área de SOC</H2>
             <p>Ela entrega com muito mais eficiência ciclos de trabalho que envolvem inferências e outros processos de aprendizado da máquina, com efeitos como desfoque de fundo em vídeos, supressão de ruído de microfones, entre outros. Assim as demais partes do chip ficam livres para performar outras funções. Outra vantagem é a eficiência: a NPU consome muito menos energia para entregar esse tipo de função, se comparada a um núcleo tradicional de processamento.</p>
             <p>Na área de SOC temos as mudanças mais profundas, com introdução de múltiplas novas estruturas. A primeira já apareceu em vídeo aqui no Adrenaline: a NPU (neural process unit), uma unidade especializada em processamento de redes neurais.</p>
             <p>Além da NPU, é na área do SOC que temos mais um novo conjunto de núcleos. Os Intel Meteor Lake introduzem mais um conjunto de cores, os LP E-cores. Também baseados em Crestmont, a diferença desses núcleos é que eles são ainda mais agressivos em sua relação entre performance e consumo. Esses são núcleos de baixíssimo consumo, capazes de manter o dispositivo em níveis altos de eficiência, e que possibilitam uma nova abordagem: desligar regiões inteiras do chip.</p>
