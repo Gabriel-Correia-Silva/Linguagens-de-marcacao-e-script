@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Maior mudança em 40 anos! Intel Core Meteor Lake detalhada!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <ul>
+        <li><a href="#Intel Foveros">Intel Foveros</a></li>
+        <li><a href="#Área de Compute">Área de Compute</a></li>
+        <li><a href="#Área de SOC">Área de SOC</a></li>
+        <li><a href="#Área dos graficos">Área dos graficos</a></li>
+      </ul>
+</head>
+<body>
+    <article>
+        <H1>Maior mudança em 40 anos! Intel Core Meteor Lake detalhada!</H1>
+        <p>Enfim a Intel detalhou a fundo as novidades que serão introduzidas com a 14ª geração Intel Core, codinome Meteor Lake, que equipará sua próxima linha de processadores. Essa é uma das maiores modificações na tecnologia de CPUs da empresa, introduzindo um novo processo de fabricação, o Intel 4, e avançando ainda mais profundamente na microarquitetura híbrida introduzida inicialmente na 12ª geração, codinome Alder Lake.</p>
+        <p>Vamos descrever em detalhes o que muda na nova geração de produtos, explicando como cada estrutura opera e como a Intel está reinventando a forma de construir seus processadores, agora que enfim vai dar escala ao Intel Foveros.</p> 
+        <section id="Intel Foveros">
+            <H1>Intel Foveros</H1>
+            <p>O grande pilar da inovação da 14ª geração Intel Core é o Intel Foveros. Essa nova técnica de construção de chips usa como base o Intel embedded multi-die interconnect bridge (EMIB), ou em tradução livre, a Ponte de Interconexão de Múltiplos Dies. Essa tecnologia já foi implementada em outros produtos da Intel, na linha Intel Xeon série Max, e agora vai ganhar escala com sua chegada a produtos para o consumidor final.</p>
+            <p>A EMIB segue uma lógica semelhante a tecnologia de chiplets 2,5D presente em produtos como os gráficos Radeon RDNA 2 e 3, que unem um die com gráficos e outro com grande quantidade de memória ou, como a AMD chama, o Infinity Cache. Mas o EMIB tem uma evolução importante.</p>
+            <p>A tecnologia 2,5D tem uma grave limitação: ela empilha dies sobre outro silício, então tamanho da implementação é diretamente vinculada ao tamanho desse interpositor. Seu custo também é amplificado na medida que você tenta unir mais dies. O EMIB não tem esse problema, pois na medida que os dies são aglomerados, essa ponte irá ligar diretamente um ao outro, criando uma expansibilidade muito menos custosa, afinal são peças muito mais compactas, e sem limitações de área máxima.</p>
+            <p>E com essa ponte ligando diferentes dies, a Intel pode pulverizar sua microarquitetura em múltiplos setores. Isso reduz custos, já que dies muito amplos são difíceis de manufaturar sem ocorrer imperfeições, além de dar versatilidade de produzir diferentes componentes em diferentes arquiteturas ou até mesmo com diferentes empresas. A AMD faz isso com os Ryzen 7000, fazendo os núcleos de processamento na mais cara litografia de 5nm da TSMC, mas economizando ao fazer o IO e os gráficos integrados em 6nm. A Intel também vai fazer, construindo parte de seus processadores ela mesma e, pasmem, fazendo em fábricas de outras empresas parte de seus produtos, como ela já faz com as Intel ARC, que são feitas pela TSMC.</p>
+            <p>A separação desses dies também dará uma nova flexibilidade de operação. A Intel equipou cada um deles com controladores de energia individuais, dando a possibilidade de ativar e desativar diferentes áreas do chip, dependendo da demanda de performance, e criando assim novas oportunidades de aumento de eficiência energética.</p>
+            <p>Os Meteor Lake vão usar a capacidade de “dividir e conquistar”, e serão construídos muito mais dies: o die de Compute, o die de SOC, o die de I/O e por fim o die de gráficos. Hora de detalhar essas estruturas, e usar as pontes de interconexão para ir de uma a outra.</p>
+        </section>  
+    
+        <section id="Área de Compute">
+            <H1>Área de Compute dos Intel Meteor Lake</H1>
+            <p>O die onde estão as estruturas mais tradicionais é o die de Compute, ou die de Computação, como iremos traduzir aqui. Aqui estão os “bons e velhos” núcleos principais de processamento, separados em núcleos de performance (P-cores) e núcleos de eficiência (E-cores), da mesma forma como acontece na 12ª e 13ª geração Intel Core. O que muda é que teremos mais núcleos de computação neste chip, mas como não estão nesse die, falaremos deles mais para frente.</p>
+            <p>Os novos núcleos de computação dos Meteor Lake vão trazer o novo processo de fabricação, o Intel 4, que usa a nova técnica de litografia do Extreme Ultra Violet (EUV). Essa nova tecnologia alcança mais de 20% ganho em eficiência energética comparada com o processo anterior, o Intel 7, e uma redução de área de aproximadamente 20%.</p>
+            <p>Os núcleos de performance dos Meteor Lake, codinome Redwood Cove, vão trazer melhorias de eficiência energética e otimizações na unidade de monitoramento e de atuação com o Intel Thread Director, tecnologia da Intel que direciona processos para diferentes núcleos dependendo de suas características.</p>
+            <p>Os núcleos de eficiência, codinome Crestmont, trarão ganhos de IPC (instruções por clock), otimizações no branch prediction, mais performance na aceleração de AI e também atuarão de forma mais eficiente com o Intel Thread Director.</p>
+            <p>Quanto isso impacta em performance? A Intel diz que haverá ganhos de desempenho nessa porção de seu CPU, mas na apresentação não divulgou números específicos. Uma pena, já que pra galera cujo foco é performance, especialmente nos desktops, essa é a informação mais importante.</p>
+        
+        </section>
+
+        <section id="Área de SOC">
+            <H1>Área de SOC</H1>
+            <p>Ela entrega com muito mais eficiência ciclos de trabalho que envolvem inferências e outros processos de aprendizado da máquina, com efeitos como desfoque de fundo em vídeos, supressão de ruído de microfones, entre outros. Assim as demais partes do chip ficam livres para performar outras funções. Outra vantagem é a eficiência: a NPU consome muito menos energia para entregar esse tipo de função, se comparada a um núcleo tradicional de processamento.</p>
+            <p>Na área de SOC temos as mudanças mais profundas, com introdução de múltiplas novas estruturas. A primeira já apareceu em vídeo aqui no Adrenaline: a NPU (neural process unit), uma unidade especializada em processamento de redes neurais.</p>
+            <p>Além da NPU, é na área do SOC que temos mais um novo conjunto de núcleos. Os Intel Meteor Lake introduzem mais um conjunto de cores, os LP E-cores. Também baseados em Crestmont, a diferença desses núcleos é que eles são ainda mais agressivos em sua relação entre performance e consumo. Esses são núcleos de baixíssimo consumo, capazes de manter o dispositivo em níveis altos de eficiência, e que possibilitam uma nova abordagem: desligar regiões inteiras do chip.</p>
+            <p>Funciona assim: o SOC tem o conjunto básico necessário para o funcionamento do chip, chamado de Low Power Island, ou Ilha de baixa energia, se traduzirmos. Nela temos os núcleos de alta eficiência, os LP E-cores, baseados também em Crestmont, mas com muito menos energia. Lá está também a NPU, e por fim um conjunto essencial de conectividade, como SATA, PCIe, USB, Wifi, Bluetooth, etc. Quando o computador está ocioso, os Meteor Lake podem dispensar completamente a área de Compute, desabilitando os núcleos de performance, bem como também desligar a área dos gráficos integrados e até a área de I/O e suas conexões adicionais. O resultado é um computador operando em um modo de baixíssimo consumo, e um incremento na autonomia de dispositivos móveis, como notebooks.</p>
+            <p>Isso também dá versatilidade para o Intel Thread Director de entender o fluxo de trabalho e direcionar para diferentes unidades. Uma função leve pode ser resolvida na NPU, porém um processamento gráfico mais complexo pode precisar da área de GPU integrada. Assim o chip muda de um perfil de alta eficiência e baixa performance para um perfil de alto desempenho e mais consumo, dependendo da demanda.</p>
+        
+        </section>
+        
+        <section id="Área dos graficos">
+            <H2>Área dos graficos</H2>
+            <p>A área dos gráficos é onde estão os núcleos de processamento gráficos integrados no processador, responsável pelas demandas mais exigentes que precisam acelerar renderização 3D e outros trabalhos que rodam de forma mais eficiente em GPU.</p>
+            <p>Os gráficos dos Meteor Lake são baseados em Intel Xe, o que significa que contam também com áreas de aceleramento de AI com as estruturas MXM, e apresentam algumas melhorias versus a implementação de gerações anteriores. Essa área é um exemplo da modularidade dos chips Intel Foveros, já que a fabricação fica por conta da TSMC, e não da Intel, dos dies com gráficos.</p>
+            <p>Aqui houve um incremento considerável na robustez do chip, que passa a se chamar Intel Xe LPG, ao invés de Intel Xe LP, como era classificado nos Raptor Lake e anteriores. Agora são 128 Unidades de Execução, um incremento de 1/3 sobre as 96 EU presentes nas tecnologias anteriores. Esses chips também passam a ter a estrutura completa dos Xe Cores, o que significa a introdução de 8 unidades de Ray Tracing, uma tecnologia que não era suportada nos gráficos integrados anteriormente. Com o total de 8 núcleos Xe, temos uma estrutura semelhante a de uma Inte ARC A380, modelo de entrada de desktop, mostrando o quanto a iGPU irá subir de categoria.</p>
+            <p>A Intel demonstrou uma série de ciclos de trabalho onde os gráficos integrados Intel Xe LPG entregam o dobro da performance dos gráficos Intel Xe LP presentes em chips Raptor Lake. Considerando que já era viável jogar algumas coisas nesses gráficos, dá pra antecipar uma performance suficiente em notebooks ultrafinos para diversos games, especialmente alguns mais leves.</p>
+            <p>Os ajustes de eficiência são parte importante dessa viabilidade de rodar games em ultafinos. A Intel conseguiu reduzir o consumo do chip em uma sessão de jogos de 28W para um consumo de apenas 10W, com destaque para a redução do consumo da GPU, nessa economia, entregando o dobro de performance por watt consumido.</p>
+            <p>Curiosamente, nessa geração os gráficos foram separados da área de media. O Media Engine foi deslocado para o SOC, para tornar possível desabilitar a porção de gráficos nos momentos de baixa demanda do chip. Mas algumas funções podem ativar a região da GPU, como funções de codificação de AV1, por exemplo.</p>
+            <p>A conectividade em vídeo nos Meteor Lake incluem o suporte a até 8K@60fps com HDR, ou 4x4K@60fps HDR ou até 360fps em resoluções 1080p e 1440p. A plataforma tem suporte a DisplayPort 2.1 20G, eDP 1.4 e HDMI 2.1.</p>
+            
+        </section>
+        <section id="Área do I/O">
+            <H2>Área do I/O dos Intel Meteor Lake</H2>
+        <p>Por fim temos a área de I/O, a com entradas e saídas do chip. Aqui pode soar um pouco estranho ainda existir esse segmento, já que muito da conectividade já estava lá na porção do SOC, como conexão wireless, SATA e PCI Express, por exemplo.</p>
+        <p>A área de I/O nos Meteor Lake tem a função de adicionar mais conectividade, como linhas PCIe adicionais, mais portas USB ou mais SATA, por exemplo. Essa também será uma área “coringa”: dependendo do mercado que o produto pretende atingir, essa porção do chip pode ser incrementada ou reduzida, dependendo da demanda por conectividade que o processador busca atingir.</p>
+        
+        </section>
+        
+        <section id="O maestro dessa orquestra">
+            <H2>O maestro dessa orquestra</H2>
+        <p>A desagregação de diversas partes do chip em áreas independentes cria uma situação inusitada: o mesmo fluxo de trabalho tem diversos núcleos que podem realizá-lo. Como o sistema operacional sabe para onde mandar um serviço, se tem núcleos de performance, núcleos de eficiência, núcleos de altíssima eficiência, uma unidade de processamento neural e ainda núcleos gráficos, todos capazes de realizar esse ciclo de trabalho?</p>
+        <p>É aí que entra o Intel Thread Director, que, de acordo com a empresa, está extremamente otimizado dentro do sistema operacional Windows. Ele determina qual a melhor forma de entregar um trabalho nesse ambiente heterogêneo.</p>
+        <p>Digamos que você quer desfocar um fundo de imagem em uma videochamada. Você tem núcleos de processador que podem fazer isso, mas não são os mais eficientes. Os núcleos Intel Xe são a porção do chip de mais alta performance, mas tem mais consumo e também podem ser utilizados em outras funções que dependem mais deste desempenho. Nesse cenário, o Thread Director vai direcionar esse trabalho para a NPU, que realiza essa função com performance suficiente e tem a maior eficiência energética, evitando que sua bateria seja drenada, e ao mesmo tempo mantém as CPUs e GPUs livres para outros trabalhos.</p>
+        <p>Quando o trabalho vai para os núcleos de processador, os Meteor Lake vão agir praticamente como comportas de uma barragem, que vão liberando mais passagem para aumentar a vazão, se necessária. É da seguinte forma: o processador vai tentar conter todas as demandas nos núcleos de baixíssimo consumo. Se a capacidade deles for excedida, o chip ativa a área de Compute e seus P-cores e E-cores.</p>
+        <p>Ao habilitar a área de Compute, os ciclos de trabalho vão primeiramente ser atendidos pelos núcleos de eficiência, os E-cores, e se eles não conseguirem dar conta do ciclo de trabalho, é aí que a porção mais potente do chip será enfim acionada. Isso aumenta em muito a eficiência do processador, especialmente em momentos que está ocioso ou com baixa carga.</p>
+        <p>Essa é também uma mudança de filosofia sobre como os processos são feito nos Alder Lake e Raptor Lake, que também possuem uma microarquitetura híbrida. Neles, os ciclos de trabalho são enviados para os núcleos de performance e, se identificados como uma baixa demanda de performance, aí são movidos para os núcleos de eficiência. Os Meteor Lake vão focar em tentar inicialmente usar os núcleos de eficiência e, se for muito trabalho para eles, aí sim os de performance serão ativados.</p>
+        <p>Essa otimização parece ser o ponto mais espinhoso de toda a tecnologia dos Intel Meteor Lake. São muitas porções individualizadas de dies, e várias estruturas que podem realizar um trabalho. Vamos precisar testar um modelo com essa nova tecnologia para descobrir se a Intel vai acertar a mão com esse arranjo complexo.</p>
+        </section>
+            
+    </article>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+   border-bottom: 5em;
+   border-top: 5em;
+   border-left: 5em;
+   border-right: 5em;
+  }
+head{
+    padding-top: -10px;
+    
+}
+body {
+    padding-top: 50px;
+    padding-right: 5em;
+    padding-bottom: 50px;
+    padding-left: 5em;
+  }
+
+ul{
+    flex-direction: start;
+    align-content: start;
+}
+  
